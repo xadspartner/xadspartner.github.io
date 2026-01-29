@@ -489,6 +489,16 @@ body {
   color: var(--text-muted);
 }
 
+.stat-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.stat-link:hover {
+  color: var(--primary);
+}
+
 .stat-note {
   font-size: 11px;
   color: var(--text-dim);
@@ -986,6 +996,10 @@ body {
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .contact-address {
+    font-size: 16px;
   }
 }
 
